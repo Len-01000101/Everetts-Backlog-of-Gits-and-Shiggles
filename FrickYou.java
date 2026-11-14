@@ -4,7 +4,7 @@ import javax.swing.*;
 
 
 //STAY IN CHARACTER!!!
-public class FuckYou 
+public class FrickYou 
 {
     public int roofHeight;
     public static int rightRoundPanels;
@@ -15,13 +15,13 @@ public class FuckYou
     public static boolean rightRound;
     public static int leftRoundPanels;
     public static boolean leftRound;
-    public static final Color grossAssWallpaper = new Color(236, 212, 133);
+    public static final Color grossWallpaper = new Color(236, 212, 133);
 
     public static void main(String[] args)
     {
         Dimension display = Toolkit.getDefaultToolkit().getScreenSize();
 
-        buildWalls(false, 0, false, 0, 0, grossAssWallpaper);
+        buildWalls(false, 0, false, 0, 0, grossWallpaper);
         //JFrame child = new JFrame("I AM A FUCKING ARCHITECT"); 
         //ImageIcon imageIcon = new ImageIcon("C:/Users/evhog/Downloads/photo.png");
         //JLabel label = new JLabel(imageIcon);
@@ -30,8 +30,9 @@ public class FuckYou
         //child.setSize(200, 200);
         //child.setVisible(true);
 
-        Timer timer = new Timer(500, e -> {
-            buildWalls(false, 0, false, 0, 0, grossAssWallpaper);
+        Timer timer = new Timer(500, e -> 
+        {
+            buildWalls(false, 0, false, 0, 0, grossWallpaper);
         });
 
         timer.setRepeats(true);
@@ -39,7 +40,7 @@ public class FuckYou
 
     }
     
-    public static void buildWalls(boolean leftWall, int leftWallWidth, boolean rightWall, int rightWallWidth, int roofHeight, Color grossAssWallpaper)
+    public static void buildWalls(boolean leftWall, int leftWallWidth, boolean rightWall, int rightWallWidth, int roofHeight, Color grossWallpaper)
     {
         Dimension display = Toolkit.getDefaultToolkit().getScreenSize();
 
@@ -78,7 +79,7 @@ public class FuckYou
                 JFrame rightRoundPanel = new JFrame(" ");
                 rightRoundPanel.setLocation(((int) display.getWidth() - rightWallWidth - 100 + 10 * rightRoundPanels), 0 + roofHeight - 200 + 10 * rightRoundPanels);
                 rightRoundPanel.setSize(40, 200);
-                rightRoundPanel.getContentPane().setBackground(grossAssWallpaper);
+                rightRoundPanel.getContentPane().setBackground(grossWallpaper);
                 rightRoundPanel.setVisible(true);
             }
         }
@@ -88,7 +89,7 @@ public class FuckYou
             JFrame right = new JFrame(" ");
             right.setLocation(((int) display.getWidth() - rightWallWidth), 0);
             right.setSize(rightWallWidth, (int) display.getHeight());
-            right.getContentPane().setBackground(grossAssWallpaper);
+            right.getContentPane().setBackground(grossWallpaper);
             right.setVisible(true);
         }
 
@@ -109,7 +110,7 @@ public class FuckYou
                 JFrame leftRoundPanel = new JFrame(" ");
                 leftRoundPanel.setLocation(0 + 10 * leftRoundPanels + leftWallWidth - 200, (0 + roofHeight) - 10 * leftRoundPanels);
                 leftRoundPanel.setSize(40, 200);
-                leftRoundPanel.getContentPane().setBackground(grossAssWallpaper);
+                leftRoundPanel.getContentPane().setBackground(grossWallpaper);
                 leftRoundPanel.setVisible(true);
             }
         }
@@ -119,7 +120,7 @@ public class FuckYou
             JFrame left = new JFrame(" ");
             left.setLocation(0, 0);
             left.setSize(leftWallWidth, (int) display.getHeight());
-            left.getContentPane().setBackground(grossAssWallpaper);
+            left.getContentPane().setBackground(grossWallpaper);
             left.setVisible(true);
         }
 
@@ -127,6 +128,6 @@ public class FuckYou
         roof.setLocation(0, 0);
         roof.setSize((int) display.getWidth(), roofHeight);
         roof.setVisible(true);
-        roof.getContentPane().setBackground(grossAssWallpaper);
+        roof.getContentPane().setBackground(grossWallpaper);
     }
 }
